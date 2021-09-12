@@ -4,7 +4,7 @@ import styled from "styled-components";
 export function FutureData() {
   return (
     <>
-      <h1>This Will Show 7-Day Forecast: </h1>
+      <h1>7-Day Forecast: </h1>
     </>
   );
 }
