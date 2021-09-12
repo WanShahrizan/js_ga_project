@@ -46,7 +46,6 @@ function WeatherData() {
       .then((data) => setData(data))
       .catch(console.error);
   }
-  console.log(process.env.WEATHERAPI);
   console.log(data);
 
   if (data) {
