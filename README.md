@@ -12,7 +12,7 @@ To-do:
   # 2 Vestig (Job Tracker)
   Job Traking App (Way behind schedule)
   
-  To-Do: 
+  To-do: 
     - Connect with database (supabase)
     - Complete the tracking page
     - Complete logout
