@@ -22,11 +22,6 @@ const Form = styled.form`
   display: relative;
 `;
 
-const MinMax = styled.div`
-  position: fixed;
-  margin-top: 10px;
-`;
-
 function WeatherData() {
   const [data, setData] = useState(null);
   const [loc, setLoc] = useState("");

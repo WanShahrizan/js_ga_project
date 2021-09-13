@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Card, Row, Col } from "react-bootstrap";
-import styled from "styled-components";
+import { Card } from "react-bootstrap";
 require("dotenv").config();
 
 export function FutureData({ location }) {
@@ -22,61 +21,109 @@ export function FutureData({ location }) {
   if (data) {
     return (
       <>
-        <h1>6-Hour Forecast for {location}: </h1>
+        <h1>6 Hour Forecast for {location}:</h1>
         <div
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(3, 1fr)",
             gridGap: 20,
-            marginTop: "40px",
+            marginTop: "20px",
             textAlign: "center",
           }}
         >
-          <Card>
-            <Card.Header>{data.list[0].dt_txt}</Card.Header>
+          <Card
+            style={{
+              backgroundColor: "#0DCAF0",
+              color: "white",
+              borderRadius: "8px",
+            }}
+          >
+            <Card.Header style={{ paddingTop: "9px" }}>
+              {data.list[0].dt_txt}
+            </Card.Header>
             <Card.Body>
               <br />
-              <Card.Title>{data.list[0].main.temp}</Card.Title>
+              <Card.Title>{data.list[0].main.temp}&#8451;</Card.Title>
               <Card.Text>{data.list[0].weather[0].main}</Card.Text>
             </Card.Body>
           </Card>
-          <Card>
-            <Card.Header>{data.list[2].dt_txt}</Card.Header>
+          <Card
+            style={{
+              backgroundColor: "#0DCAF0",
+              color: "white",
+              borderRadius: "8px",
+            }}
+          >
+            <Card.Header style={{ paddingTop: "9px" }}>
+              {data.list[2].dt_txt}
+            </Card.Header>
             <Card.Body>
               <br />
-              <Card.Title>{data.list[2].main.temp}</Card.Title>
+              <Card.Title>{data.list[2].main.temp}&#8451;</Card.Title>
               <Card.Text>{data.list[2].weather[0].main}</Card.Text>
             </Card.Body>
           </Card>
-          <Card>
-            <Card.Header>{data.list[4].dt_txt}</Card.Header>
+          <Card
+            style={{
+              backgroundColor: "#0DCAF0",
+              color: "white",
+              borderRadius: "8px",
+            }}
+          >
+            <Card.Header style={{ paddingTop: "9px" }}>
+              {data.list[4].dt_txt}
+            </Card.Header>
             <Card.Body>
               <br />
-              <Card.Title>{data.list[4].main.temp}</Card.Title>
+              <Card.Title>{data.list[4].main.temp}&#8451;</Card.Title>
               <Card.Text>{data.list[4].weather[0].main}</Card.Text>
             </Card.Body>
           </Card>
-          <Card>
-            <Card.Header>{data.list[6].dt_txt}</Card.Header>
+          <Card
+            style={{
+              backgroundColor: "#0DCAF0",
+              color: "white",
+              borderRadius: "8px",
+            }}
+          >
+            <Card.Header style={{ paddingTop: "9px" }}>
+              {data.list[6].dt_txt}
+            </Card.Header>
             <Card.Body>
               <br />
-              <Card.Title>{data.list[6].main.temp}</Card.Title>
+              <Card.Title>{data.list[6].main.temp}&#8451;</Card.Title>
               <Card.Text>{data.list[6].weather[0].main}</Card.Text>
             </Card.Body>
           </Card>
-          <Card>
-            <Card.Header>{data.list[8].dt_txt}</Card.Header>
+          <Card
+            style={{
+              backgroundColor: "#0DCAF0",
+              color: "white",
+              borderRadius: "8px",
+            }}
+          >
+            <Card.Header style={{ paddingTop: "9px" }}>
+              {data.list[8].dt_txt}
+            </Card.Header>
             <Card.Body>
               <br />
-              <Card.Title>{data.list[8].main.temp}</Card.Title>
+              <Card.Title>{data.list[8].main.temp}&#8451;</Card.Title>
               <Card.Text>{data.list[8].weather[0].main}</Card.Text>
             </Card.Body>
           </Card>
-          <Card>
-            <Card.Header>{data.list[10].dt_txt}</Card.Header>
+          <Card
+            style={{
+              backgroundColor: "#0DCAF0",
+              color: "white",
+              borderRadius: "8px",
+            }}
+          >
+            <Card.Header style={{ paddingTop: "9px" }}>
+              {data.list[10].dt_txt}
+            </Card.Header>
             <Card.Body>
               <br />
-              <Card.Title>{data.list[10].main.temp}</Card.Title>
+              <Card.Title>{data.list[10].main.temp}&#8451;</Card.Title>
               <Card.Text>{data.list[10].weather[0].main}</Card.Text>
             </Card.Body>
           </Card>
