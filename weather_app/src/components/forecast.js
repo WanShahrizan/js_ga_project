@@ -22,7 +22,7 @@ export function FutureData({ location }) {
   if (data) {
     return (
       <>
-        <h1>3-Hour Forecast for {location}: </h1>
+        <h1>6-Hour Forecast for {location}: </h1>
         <div
           style={{
             display: "grid",
@@ -41,19 +41,43 @@ export function FutureData({ location }) {
             </Card.Body>
           </Card>
           <Card>
-            <Card.Header>{data.list[1].dt_txt}</Card.Header>
-            <Card.Body>
-              <br />
-              <Card.Title>{data.list[1].main.temp}</Card.Title>
-              <Card.Text>{data.list[1].weather[0].main}</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card>
             <Card.Header>{data.list[2].dt_txt}</Card.Header>
             <Card.Body>
               <br />
               <Card.Title>{data.list[2].main.temp}</Card.Title>
               <Card.Text>{data.list[2].weather[0].main}</Card.Text>
+            </Card.Body>
+          </Card>
+          <Card>
+            <Card.Header>{data.list[4].dt_txt}</Card.Header>
+            <Card.Body>
+              <br />
+              <Card.Title>{data.list[4].main.temp}</Card.Title>
+              <Card.Text>{data.list[4].weather[0].main}</Card.Text>
+            </Card.Body>
+          </Card>
+          <Card>
+            <Card.Header>{data.list[6].dt_txt}</Card.Header>
+            <Card.Body>
+              <br />
+              <Card.Title>{data.list[6].main.temp}</Card.Title>
+              <Card.Text>{data.list[6].weather[0].main}</Card.Text>
+            </Card.Body>
+          </Card>
+          <Card>
+            <Card.Header>{data.list[8].dt_txt}</Card.Header>
+            <Card.Body>
+              <br />
+              <Card.Title>{data.list[8].main.temp}</Card.Title>
+              <Card.Text>{data.list[8].weather[0].main}</Card.Text>
+            </Card.Body>
+          </Card>
+          <Card>
+            <Card.Header>{data.list[10].dt_txt}</Card.Header>
+            <Card.Body>
+              <br />
+              <Card.Title>{data.list[10].main.temp}</Card.Title>
+              <Card.Text>{data.list[10].weather[0].main}</Card.Text>
             </Card.Body>
           </Card>
         </div>
