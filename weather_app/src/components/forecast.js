@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Card, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
+require("dotenv").config();
 
 export function FutureData({ location }) {
   const [data, setData] = useState(null);
 
-  let urlForecast = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&units=metric&appid=aeb835d9e4332e1466aa80c11838c442`;
+  let weatherApi = process.env.WEATHERAPI;
+  let urlForecast = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&units=metric&appid=${weatherApi}`;
 
   useEffect(() => {
     fetch(urlForecast, { method: "GET" })
