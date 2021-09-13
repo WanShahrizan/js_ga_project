@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FutureData } from "./forecast";
 import styled from "styled-components";
 import { BiSearchAlt } from "react-icons/bi";
 require("dotenv").config();
@@ -85,6 +86,7 @@ function WeatherData() {
             <div>{data.weather[0].description}</div>
           </div>
         </Head>
+        <FutureData location={data.name} />
       </>
     );
   } else {
