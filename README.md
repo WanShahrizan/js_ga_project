@@ -4,9 +4,7 @@
 Simmple weather app
 
 To-do:
-  - Find API that can call 7-days Forecast
   - Find way to change background image
-  - Edit the header card with more information
   - Add in login/logout functionality (using supabase)
   
   # 2 Vestig (Job Tracker)
