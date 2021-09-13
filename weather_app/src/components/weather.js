@@ -47,7 +47,7 @@ function WeatherData() {
       .then((data) => setData(data))
       .catch(console.error);
 
-    console.log(data);
+    //console.log(data);
   }
 
   if (data) {
